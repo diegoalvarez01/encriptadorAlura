@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="encabezado">
+                <h1><img src="imagenes/logo.png"></h1>
+        
+            </div>
+        
+        </header>
+
+        <main>
+            <textarea cols="70" rows="10" class="input-texto" id="input-texto" placeholder="Ingrese el texto aquí..."></textarea>
+            <h3 class="aviso"><img src="imagenes/aviso.png">Solo letras minúsculas y sin acentos.</h3>
+
+            <div class="submits">
+
+                <button type="button" onclick="encriptar()" class="encriptar" id="encriptar1">Encriptar</button>
+                <input type="button" onclick="desencriptar()" value="Desencriptar" class="desencriptar">
+            </div>
+            
+            <div>
+                <div class="rectangulo"></div>
+                <textarea disabled cols="70" rows="10" class="output-texto" id="output-texto"></textarea>
+                <button type="button" onclick="copiaralportapapeles()" class="copiar" id="copiar">Copiar</button>
+
+                <div>
+                    <div id="mensajeencontrado">
+                        <h4>Ningún mensaje fue encontrado</h4>
+                        <h5>Ingresa el texto que desees encriptar o desencriptar</h5>
+                    </div>
+                    <img src="imagenes/Muñeco.png" id="muñeco">
+
+
+                </div>
+                
+                
+            </div>
+            
+            <p class="footer">Hecho por Diego Álvarez</p>
+
+
+        </main>
+        <script src="encriptador.js"></script>
+
+    </body>
+
+
+
+
+</html>
